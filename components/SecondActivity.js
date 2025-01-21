@@ -1,6 +1,5 @@
 import { useState } from "react";
-import { StyleSheet, TextInput, View, Button } from "react-native";
-
+import { StyleSheet, TextInput, View } from "react-native";
 import AntDesign from "@expo/vector-icons/AntDesign";
 
 export default function SecondActivity({ route, navigation }) {
@@ -22,7 +21,7 @@ export default function SecondActivity({ route, navigation }) {
       phone: !phone,
       img: !img,
     };
-
+    console.log("Route Params: ", route.params);
     if (Object.values(newErrors).includes(true)) {
       setErrors(newErrors);
     } else {
