@@ -21,7 +21,6 @@ export default function SecondActivity({ route, navigation }) {
       phone: !phone,
       img: !img,
     };
-    console.log("Route Params: ", route.params);
     if (Object.values(newErrors).includes(true)) {
       setErrors(newErrors);
     } else {
